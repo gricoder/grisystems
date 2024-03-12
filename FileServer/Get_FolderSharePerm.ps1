@@ -64,7 +64,7 @@ Function Get-FolderSharePerm {
                     $accessflt=$null
 
                     $access=Get-Acl $share.path
-                    $accessflts=$access.Access | ?{($_.IdentityReference -notmatch 'Everyone|BUILTIN\\Administrators|NT AUTHORITY\\System|Builtin\\Users|NT AUTHORITY\\Authenticated Users')}
+                    $accessflts=$access.Access | ?{($_.IdentityReference -notmatch 'Everyone|BUILTIN\\Administrators|NT AUTHORITY\\System|BUILTIN\\Users|CREATOR OWNER|NT AUTHORITY\\Authenticated Users')}
                     
 
                         If($accessflts.Count -gt 0){
