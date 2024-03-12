@@ -1,1 +1,11 @@
-temp
+#Files
+.gitignore
+
+#Extention
+*.gz
+*.txt
+*.log
+
+#Direcories
+*temp*
+*log*
