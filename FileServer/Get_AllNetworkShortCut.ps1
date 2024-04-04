@@ -2,7 +2,7 @@
 ######  Get-NetworkShortCut.ps1             #######################
 ###### 	DO NOT ANY CHANGE ON THIS SCRIPT 	#######################
 ###### 	AUTHOR:  ibrahim KARSU              #######################
-######  DATE:    28.03.2024                 #######################
+######  DATE:    04.04.2024                 #######################
 ###### 	WWW:    www.ibrahimkarsu.com        #######################
 ###### 	TWITTER: @ikarsu                    #######################
 ######  LINKEDIN: /ibrahimkarsu             #######################
@@ -12,12 +12,12 @@ $dir="$($env:temp)"
 # Example
 # $dir="\\servername\sharingname"
 
-$opath="$($dir)\$($env:USERNAME).txt"
+$opath="$($dir)\$($env:COMPUTERNAME).txt"
 
-$lpath="$($env:temp)\$(get-date -f 'ddMMyy')_Log.txt"
+$lpath="$($env:temp)\GetAllNwSc_Log_$(get-date -f 'ddMMyy').txt"
 
 Add-Content $lpath "Script Started at $(Get-Date)"
-Add-Content $opath "comuter,user,folder,path"
+Add-Content $opath "computer,user,folder,path"
 
 If(Test-Path $opath){Add-Content $lpath "Output File Created: $($opath)"}
 Else{Add-Content $lpath "ERROR: Output File Not Created: $($opath)"}
@@ -73,4 +73,5 @@ Else{Add-Content $lpath "$($env:USERNAME)-ERROR: No Network Folder Found"}
 
 #endregion
 
+Add-Content $lpath "Script Ended at $(Get-Date)"
 
