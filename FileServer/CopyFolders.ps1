@@ -1,11 +1,13 @@
 ﻿#region TAG
 
-### NAME:    Get-AuditFolder.ps1
-### AUTHOR:  ibrahim KARSU  
-### DATE:    20.10.2024
-### WWW:    www.ibrahimkarsu.com
-### TWITTER: @ikarsu
+### NAME:     Get-AuditFolder.ps1
+### AUTHOR:   ibrahim KARSU  
+### DATE:     20.10.2024
+### WWW:      www.cybervisir.com
+### GITHUB:   gricoder
+### TWITTER:  @ikarsu
 ### LINKEDIN: /ibrahimkarsu
+### MEDIUM:   cybervisir.medium.com
 
 #endregion TAG
 
